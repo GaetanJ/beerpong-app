@@ -1,40 +1,363 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #2c2c2c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.appName {
+  font-family: 'Heineken';
+  font-size: 12vh;
+  background: -webkit-linear-gradient(#bc7012 50%, #efd002 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 .buttonBar {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  margin-top: 100px;
+  width: 70%;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .borderbox {
+  position: relative;
+  transition: all 1s;
+}
+.container .borderbox:hover {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.container .borderbox:hover .inner {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.container .borderbox:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: -50px;
+  width: 50px;
+  height: 110px;
+  border: 20px solid lightgray;
+  border-radius: 25px;
+}
+.container .borderbox .glass {
+  position: relative;
+  width: 180px;
+  height: 245px;
+  background-color: #969696;
+  border-radius: 5px;
+  border: 10px solid lightgray;
+  border-top: none;
+  overflow: hidden;
+}
+.container .borderbox .glass:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 99;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 50px 0 0 0 rgba(0, 0, 0, 0.2), -50px 0 0 0 rgba(0, 0, 0, 0.2);
+}
+.container .borderbox .glass .inner {
+  position: absolute;
+  width: 200%;
+  height: 240px;
+  border-top: 50px solid white;
+  background: linear-gradient(to bottom, #bc7012 0%, #efd002 100%);
+  background-color: #f7a900;
+  transition: all 1s;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+
+.bubble:nth-child(0) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 266px;
+  left: 67px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: -1050ms;
+          animation-duration: -1050ms;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.bubble:nth-child(1) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 192px;
+  left: 43px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: -50ms;
+          animation-duration: -50ms;
+  -webkit-animation-delay: 151ms;
+          animation-delay: 151ms;
+}
+
+.bubble:nth-child(2) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 105px;
+  left: 196px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 950ms;
+          animation-duration: 950ms;
+  -webkit-animation-delay: 152ms;
+          animation-delay: 152ms;
+}
+
+.bubble:nth-child(3) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 175px;
+  left: 199px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1950ms;
+          animation-duration: 1950ms;
+  -webkit-animation-delay: 153ms;
+          animation-delay: 153ms;
+}
+
+.bubble:nth-child(4) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 218px;
+  left: 95px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2950ms;
+          animation-duration: 2950ms;
+  -webkit-animation-delay: 154ms;
+          animation-delay: 154ms;
+}
+
+.bubble:nth-child(5) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 69px;
+  left: 189px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3950ms;
+          animation-duration: 3950ms;
+  -webkit-animation-delay: 155ms;
+          animation-delay: 155ms;
+}
+
+.bubble:nth-child(6) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 42px;
+  left: 81px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4950ms;
+          animation-duration: 4950ms;
+  -webkit-animation-delay: 156ms;
+          animation-delay: 156ms;
+}
+
+.bubble:nth-child(7) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 307px;
+  left: 110px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5950ms;
+          animation-duration: 5950ms;
+  -webkit-animation-delay: 157ms;
+          animation-delay: 157ms;
+}
+
+.bubble:nth-child(8) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 138px;
+  left: 111px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 6950ms;
+          animation-duration: 6950ms;
+  -webkit-animation-delay: 158ms;
+          animation-delay: 158ms;
+}
+
+.bubble:nth-child(9) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 92px;
+  left: 95px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 7950ms;
+          animation-duration: 7950ms;
+  -webkit-animation-delay: 159ms;
+          animation-delay: 159ms;
+}
+
+.bubble:nth-child(10) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 240px;
+  left: 92px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 8950ms;
+          animation-duration: 8950ms;
+  -webkit-animation-delay: 160ms;
+          animation-delay: 160ms;
+}
+
+.bubble:nth-child(11) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 220px;
+  left: 116px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 9950ms;
+          animation-duration: 9950ms;
+  -webkit-animation-delay: 161ms;
+          animation-delay: 161ms;
+}
+
+.bubble:nth-child(12) {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  top: 42px;
+  left: 133px;
+  -webkit-animation-name: bubbles;
+          animation-name: bubbles;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 10950ms;
+          animation-duration: 10950ms;
+  -webkit-animation-delay: 162ms;
+          animation-delay: 162ms;
+}
+
+@-webkit-keyframes bubbles {
+  100% {
+    top: -10px;
+  }
+}
+
+@keyframes bubbles {
+  100% {
+    top: -10px;
+  }
+}
