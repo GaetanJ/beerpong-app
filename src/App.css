@@ -30,3 +30,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+.buttonBar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
