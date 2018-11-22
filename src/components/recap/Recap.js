@@ -1,18 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 import PoolsGrid from './poolsGrid/PoolsGrid'
 
-
 const styles = {
   root: {
     flexGrow: 1,
   },
 };
+
+const theme = createMuiTheme({
+  palette: {
+    primary: { light: '#bc7012', main: '#bc7012', dark: '#bc7012' },
+    secondary: { light: '#000000', main: '#000000', dark: '#000000' },
+    background: { default: '#2c2c2c' }
+  },
+  status: {
+    danger: 'orange',
+  }
+});
 
 class Recap extends React.Component {
   state = {
@@ -28,7 +40,9 @@ class Recap extends React.Component {
     const { value } = this.state;
 
     return (
-      <div>
+      <MuiThemeProvider theme={theme}>  
+        <CssBaseline />
+
         <Paper className={classes.root}>
           <Tabs
             value={this.state.value}
@@ -43,7 +57,7 @@ class Recap extends React.Component {
         </Paper>
         {value === 0 && <PoolsGrid></PoolsGrid>}
         {value === 1 && <div>Item Two</div>}
-      </div>
+      </MuiThemeProvider>
       );
     }
   }

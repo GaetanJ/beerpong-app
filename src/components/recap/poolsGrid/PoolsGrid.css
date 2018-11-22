@@ -1,12 +1,41 @@
-.tournamentTitle {
+.pools {
+    background-color: #2c2c2c;
+}
+
+.tournamentName {
     text-align: center;
+    font-family: "Heineken";
+    color: #bc7012;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin: 24px;
+}
+
+@media only screen and (min-width: 1180px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1180px) and (min-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .poolName {

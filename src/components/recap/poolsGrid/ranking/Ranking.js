@@ -11,8 +11,6 @@ class Ranking extends React.Component {
 
   render() {
 
-    console.log(this.props)
-
     return (
         <div className="table">
             <Table>
@@ -23,7 +21,7 @@ class Ranking extends React.Component {
                         })
                         .map((row) => {
                         return (
-                            <TableRow >
+                            <TableRow key={row.id}>
                                 <TableCell>{row.name}</TableCell>
                                 <TableCell numeric>{row.points}</TableCell>
                             </TableRow>
