@@ -1,0 +1,30 @@
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.team2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 400%;
+}
+
+.teamName1 {
+    width: 400%;
+    padding: 0 24px 0 24px;
+}
+
+.teamName2 {
+    width: 70%;
+    padding: 0 24px 0 24px;
+}
+
+
+
+.separator {
+    width: 50%;
+}

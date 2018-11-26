@@ -17,7 +17,10 @@ class Ranking extends React.Component {
                 <TableBody>
                     {this.props.teams
                         .sort(function (a, b) {
-                         return b.points - a.points;
+                            if (a.points === b.points) {
+                                return (b.beerFor-b.beerAgainst) - (a.beerFor-a.beerAgainst) 
+                            }
+                            return b.points - a.points;
                         })
                         .map((row) => {
                         return (
