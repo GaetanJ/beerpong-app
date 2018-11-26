@@ -6,6 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 import PoolsGrid from './poolsGrid/PoolsGrid'
+import BracketTree from './bracketTree/BracketTree'
 
 const styles = {
   root: {
@@ -44,7 +45,7 @@ class Recap extends React.Component {
           </Tabs>
         </Paper>
         {value === 0 && <PoolsGrid></PoolsGrid>}
-        {value === 1 && <div>Item Two</div>}
+        {value === 1 && <BracketTree></BracketTree>}
       </div>
       );
     }

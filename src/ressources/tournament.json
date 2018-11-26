@@ -1,421 +1,198 @@
 {
-    "name": "Tournament name",
-    "pools": [
+    "name": "Tournoi BDE 26/11/2018",
+    "teams": [
         {
-            "id": 1,
-            "name": "Poule A",
-            "teams": [
-                {
-                    "id": 1,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 2,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 3,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 4,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]
+            "name": "Lemurs are Back"
         },
         {
-            "id": 2,
-            "name": "Poule B",
-            "teams": [
-                {
-                    "id": 5,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 6,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 7,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 8,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Spliterator"
         },
         {
-            "id": 3,
-            "name": "Poule C",
-            "teams": [
-                {
-                    "id": 9,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 10,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 11,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 12,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Rhabille toi Mayeul"
         },
         {
-            "id": 4,
-            "name": "Poule D",
-            "teams": [
-                {
-                    "id": 13,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 14,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 15,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 16,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Les pépites"
         },
         {
-            "id": 5,
-            "name": "Poule E",
-            "teams": [
-                {
-                    "id": 17,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 18,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 19,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 20,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "GAR"
         },
         {
-            "id": 6,
-            "name": "Poule F",
-            "teams": [
-                {
-                    "id": 21,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 22,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 23,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 24,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Silverbacks"
         },
         {
-            "id": 7,
-            "name": "Poule G",
-            "teams": [
-                {
-                    "id": 25,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 26,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 27,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 28,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Kichoru?"
         },
         {
-            "id": 8,
-            "name": "Poule H",
-            "teams": [
-                {
-                    "id": 29,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 30,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 31,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 32,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Canette de liquide vaiselle"
         },
         {
-            "id": 9,
-            "name": "Poule I",
-            "teams": [
-                {
-                    "id": 33,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 34,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 35,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 36,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "May-linh"
         },
         {
-            "id": 10,
-            "name": "Poule J",
-            "teams": [
-                {
-                    "id": 37,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 38,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 39,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 40,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Blabla"
         },
         {
-            "id": 11,
-            "name": "Poule K",
-            "teams": [
-                {
-                    "id": 41,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 42,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 43,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 44,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "PèteMoiLeCulGiroud"
         },
         {
-            "id": 12,
-            "name": "Poule L",
-            "teams": [
-                {
-                    "id": 45,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 46,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 47,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 48,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Le Paghizistan"
         },
         {
-            "id": 13,
-            "name": "Poule M",
-            "teams": [
-                {
-                    "id": 49,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 50,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 51,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 52,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "Clapoteam"
         },
         {
-            "id": 14,
-            "name": "Poule O",
-            "teams": [
-                {
-                    "id": 53,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 54,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 55,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 56,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "CogneuSes"
         },
         {
-            "id": 15,
-            "name": "Poule P",
-            "teams": [
-                {
-                    "id": 57,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 58,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 59,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 60,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]    
+            "name": "92Izi"
         },
         {
-            "id": 16,
-            "name": "Poule Q",
-            "teams": [
-                {
-                    "id": 61,
-                    "name": "Équipe 1",
-                    "points": 0
-                },
-                {
-                    "id": 62,
-                    "name": "Équipe 2",
-                    "points": 0
-                },
-                {
-                    "id": 63,
-                    "name": "Équipe 3",
-                    "points": 0
-                },
-                {
-                    "id": 64,
-                    "name": "Équipe 4",
-                    "points": 0
-                }
-            ]
+            "name": "Les rices cooker"
+        },
+        {
+            "name": "Raide Boule Sale Zboob"
+        },
+        {
+            "name": "Les gooow"
+        },
+        {
+            "name": "Le mac et son harem"
+        },
+        {
+            "name": "MICHTOUCAAS"
+        },
+        {
+            "name": "TCEXOTIQUE"
+        },
+        {
+            "name": "Djadjeuses"
+        },
+        {
+            "name": "Les si moch"
+        },
+        {
+            "name": "La street familiale"
+        },
+        {
+            "name": "Les biens lotis 2.0"
+        },
+        {
+            "name": "Famille 5.0"
+        },
+        {
+            "name": "Peutsipat"
+        },
+        {
+            "name": "GHB"
+        },
+        {
+            "name": "La seleçao"
+        },
+        {
+            "name": "La chambre de l'ambiance"
+        },
+        {
+            "name": "Easy-Money"
+        },
+        {
+            "name": "Touché Coulé"
+        },
+        {
+            "name": "Ales-on-tencule"
+        },
+        {
+            "name": "Les caramels mous"
+        },
+        {
+            "name": "Les Dragons"
+        },
+        {
+            "name": "3 Guyz 6 Cups"
+        },
+        {
+            "name": "La Bistrac"
+        },
+        {
+            "name": "Bigalight"
+        },
+        {
+            "name": "Les Verres de l'IMT"
+        },
+        {
+            "name": "Soupe de champagne"
+        },
+        {
+            "name": "Koaligh"
+        },
+        {
+            "name": "Chibraltar"
+        },
+        {
+            "name": "Rattrapages"
+        },
+        {
+            "name": "Bigalourd"
+        },
+        {
+            "name": "LéoPinseTan"
+        },
+        {
+            "name": "Miroslav Buldosex"
+        },
+        {
+            "name": "Team Verre qui tombe"
+        },
+        {
+            "name": "Les Trois Rois"
+        },
+        {
+            "name": "Madriste"
+        },
+        {
+            "name": "PLS Footing"
+        },
+        {
+            "name": "Salade de frrrr"
+        },
+        {
+            "name": "Team Caliente"
+        },
+        {
+            "name": "Les snipeuses"
+        },
+        {
+            "name": "4rote"
+        },
+        {
+            "name": "Toulouse FC"
+        },
+        {
+            "name": "CiseauxLucarne"
+        },
+        {
+            "name": "MERCASUR"
+        },
+        {
+            "name": "Puterie"
+        },
+        {
+            "name": "The Tribe Team A"
+        },
+        {
+            "name": "Les marsoins"
+        },
+        {
+            "name": "ESB/Veto"
+        },
+        {
+            "name": "Gros"
+        },
+        {
+            "name": "VetiMotte"
+        },
+        {
+            "name": "Jeanne seche le fitness"
         }
     ]
 }
+

@@ -2,6 +2,8 @@ import React from 'react'
 import TextField from '@material-ui/core/TextField';
 import IconButton from '@material-ui/core/IconButton';
 import CheckIcon from '@material-ui/icons/Check';
+import EditIcon from '@material-ui/icons/Edit';
+
 
 
 import './Match.css';
@@ -14,7 +16,8 @@ class Match extends React.Component {
             id: 0,
             order: 0,
             beerFor1: 0,
-            beerFor2: 0
+            beerFor2: 0,
+            played: false
         }
     }
 
@@ -23,12 +26,10 @@ class Match extends React.Component {
         this.setState({ order: this.props.match.order });
         this.setState({ beerFor1: this.props.match.beerFor1 });
         this.setState({ beerFor2: this.props.match.beerFor2 });
+        this.setState({ played: this.props.match.played });
     }
 
     handleChange = name => event => {
-
-        console.log('change')
-
         this.setState({
             [name]: event.target.value,
         });
@@ -43,10 +44,29 @@ class Match extends React.Component {
             "BeerFor2": this.state.beerFor2
         }
 
-        
-        
-
         fetch('http://localhost:5000/api/tournament/match/' + this.state.id, {
+            method: 'put',
+            body: JSON.stringify(opts),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        }).then(() => {
+            this.props.onUpdateMatch();
+            this.setState({ played: true });
+        })
+
+    }
+
+    editScore = () => {
+
+        let opts = {
+            "ID": this.state.id,
+            "Order": this.state.order,
+            "BeerFor1": this.state.beerFor1,
+            "BeerFor2": this.state.beerFor2
+        }
+
+        fetch('http://localhost:5000/api/tournament/match/edit/' + this.state.id, {
             method: 'put',
             body: JSON.stringify(opts),
             headers: {
@@ -89,9 +109,12 @@ class Match extends React.Component {
                 />
                 <div className="team2">
                     <h4 className="teamName2">{this.props.match.team2.name}</h4>
-                    <IconButton color="primary" component="span" onClick={this.updateScore}>
+                    {!this.state.played && <IconButton color="primary" component="span" onClick={this.updateScore}>
                         <CheckIcon />
-                    </IconButton>
+                    </IconButton>}
+                    {this.state.played && <IconButton color="primary" component="span" onClick={this.editScore}>
+                        <EditIcon />
+                    </IconButton>}
                 </div>
             </div>
         )
